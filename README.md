@@ -29,7 +29,7 @@ To ensure the lab environment works properly and doesn't block my testing tools,
 *   `Set-MpPreference -DisableScanningNetworkFiles $true`
 *   `Set-MpPreference -DisableBlockAtFirstSeen $true`
 
-![IP Config](images/ip-config.png)
+![Lab Modules](images/Lab-modules.png)
 
 ## 📂 Lab Modules
 I will be working through the following modules and documenting my findings:
