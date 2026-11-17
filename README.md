@@ -21,7 +21,7 @@ I am using **VMware Workstation** to host my virtual machines.
     *   NAT IP (`ens33`): `192.168.81.138`
     *   Host-Only IP (`ens37`): `192.168.10.5`
 
-![IP Config](images/ip-config.png)
+![Disable Defender](images/disable-defender.png) 
 
 ### 3. Security Preparations
 To ensure the lab environment works properly and doesn't block my testing tools, I disabled Windows Defender's real-time protection on the Windows VM using PowerShell:
@@ -29,7 +29,7 @@ To ensure the lab environment works properly and doesn't block my testing tools,
 *   `Set-MpPreference -DisableScanningNetworkFiles $true`
 *   `Set-MpPreference -DisableBlockAtFirstSeen $true`
 
-![Disable Defender](images/disable-defender.png)
+![IP Config](images/ip-config.png)
 
 ## 📂 Lab Modules
 I will be working through the following modules and documenting my findings:
