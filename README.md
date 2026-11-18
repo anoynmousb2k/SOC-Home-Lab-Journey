@@ -29,7 +29,7 @@ To ensure the lab environment works properly and doesn't block my testing tools,
 *   `Set-MpPreference -DisableScanningNetworkFiles $true`
 *   `Set-MpPreference -DisableBlockAtFirstSeen $true`
 
-![Lab Modules](images/Lab-modules.png)
+![Lab Modules](https://github.com/anoynmousb2k/SOC-Home-Lab-Journey/blob/c60d9f25e8050de99f2f2902afcb49f6e47d96fd/images/lab-modules.png.png)
 
 ## 📂 Lab Modules
 I will be working through the following modules and documenting my findings:
