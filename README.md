@@ -22,7 +22,7 @@ I am using **VMware Workstation** to host my virtual machines.
  ![Network Setup](https://github.com/anoynmousb2k/SOC-Home-Lab-Journey/blob/bca3097943b6e781a7739d631ab41ffdee2c8bf2/images/vmware-network.png.png)
 
 ### 3. Security Preparations
-To ensure the lab environment works properly and doesn't block my testing tools, I disabled Windows Defender's real-time protection on the Windows VM using PowerShell:
+Windows Defender was disabled *only on this isolated lab VM* to allow safe malware analysis practice. Never do this on a personal or production machine.
 *   `Set-MpPreference -DisableRealtimeMonitoring $true`
 *   `Set-MpPreference -DisableScanningNetworkFiles $true`
 *   `Set-MpPreference -DisableBlockAtFirstSeen $true`
