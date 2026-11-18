@@ -21,7 +21,7 @@ I am using **VMware Workstation** to host my virtual machines.
     *   NAT IP (`ens33`): `192.168.81.138`
     *   Host-Only IP (`ens37`): `192.168.10.5`
 
-![Disable Defender](images/disable-defender.png) 
+![Disable Defender](https://github.com/anoynmousb2k/SOC-Home-Lab-Journey/blob/ff896433d70e314dc5f9b96922ca84b41bb6e3a2/images/disable-defender.png.png) 
 
 ### 3. Security Preparations
 To ensure the lab environment works properly and doesn't block my testing tools, I disabled Windows Defender's real-time protection on the Windows VM using PowerShell:
