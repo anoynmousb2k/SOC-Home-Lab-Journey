@@ -11,7 +11,7 @@ I am using **VMware Workstation** to host my virtual machines.
 *   **VMnet2 (Host-Only):** `192.168.10.0/24` - Used for internal lab traffic between the attacker and victim machines.
 *   **VMnet8 (NAT):** Used to provide internet access to the VMs for downloading tools and updates.
 
-![Network Setup](images/vmware-network.png)
+![Network Setup](https://github.com/anoynmousb2k/SOC-Home-Lab-Journey/blob/bca3097943b6e781a7739d631ab41ffdee2c8bf2/images/vmware-network.png.png)
 
 ### 2. Virtual Machines
 *   **Windows 10 (Victim/Target):** 
