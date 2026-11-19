@@ -16,5 +16,5 @@ Source: TCM Security Academy — *Security Operations (SOC) 101* (`https://youtu
 - **Analyst Takeaway:** Recognizing what normal vs. malicious activity looks like makes log analysis and alert investigation much faster.
 
 ## Personal Takeaways & Next Steps
-- **What clicked today:** [Add 1–2 sentences on what stood out to you]
+- **What clicked today:** [Learning the SOC's role alongside core security principles and common threat patterns made it clear that effective defense starts with knowing what "normal" looks like before trying to spot anomalies in logs or alerts.]
 - **Next up in the lab:** Moving into hands-on analysis and lab exercises (such as phishing analysis, network traffic inspection, and SIEM/log work).
