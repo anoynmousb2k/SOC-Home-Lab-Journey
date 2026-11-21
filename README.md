@@ -41,7 +41,3 @@ I will be working through the following modules and documenting my findings:
 
 ![Lab Modules](https://github.com/anoynmousb2k/SOC-Home-Lab-Journey/blob/c60d9f25e8050de99f2f2902afcb49f6e47d96fd/images/lab-modules.png.png)
 
-## 🚀 Next Steps
-*   Install and configure **Sysmon** on the Windows VM.
-*   Set up **Splunk** to collect and analyze logs.
-*   Start simulating attacks from Kali and detecting them.
