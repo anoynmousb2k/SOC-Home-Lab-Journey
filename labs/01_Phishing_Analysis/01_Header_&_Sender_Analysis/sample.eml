@@ -1,0 +1,48 @@
+MIME-Version: 1.0
+Date: Wed, 19 Nov 2026 14:12:04 -0500
+Message-ID: <lab-sample-001@soc-home-lab.local>
+Subject: Action required: unusual sign-in on your Chase account
+From: Chase Alerts <alerts@chase.com>
+Reply-To: kellyellin426@proton.me
+Return-Path: <alerts@chase.com>
+To: analyst@soc-home-lab.local
+Authentication-Results: mx.soc-home-lab.local;
+	spf=pass smtp.mailfrom=alerts@chase.com;
+	dkim=timeout header.d=chase.com header.s=s1;
+	dmarc=none action=none header.from=chase.com p=none
+Received-SPF: pass (sender SPF authorized)
+Content-Type: multipart/alternative; boundary="----=_LAB_BOUNDARY_001"
+
+This is a SOC home-lab sample only. Do not send this message to real users.
+
+------=_LAB_BOUNDARY_001
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Chase Alerts
+
+We noticed a sign-in we did not recognize.
+
+If this was you, you can ignore this message.
+If this was not you, reply to this email immediately so we can lock the account.
+
+This file is a training sample for header and tracking-pixel analysis.
+
+------=_LAB_BOUNDARY_001
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Chase Alerts</p>
+    <p>We noticed a sign-in we did not recognize.</p>
+    <p>If this was you, you can ignore this message.<br>
+       If this was not you, reply to this email immediately so we can lock the account.</p>
+    <p style="font-size:11px;color:#666;">This file is a training sample for header and tracking-pixel analysis.</p>
+    <!-- Hidden 1x1 tracking pixel: when the client loads images, it requests this URL. -->
+    <img src="http://192.168.10.5/Red-Circle-Transparent.png" width="1" height="1" alt="" style="display:none;border:0;width:1px;height:1px;" />
+  </body>
+</html>
+
+------=_LAB_BOUNDARY_001--

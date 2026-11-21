@@ -1,43 +1,64 @@
-# SOC-Home-Lab-Journey
-My journey building a SOC Home Lab to practice threat hunting and incident response.
-# SOC Home Lab Journey 🛡️
+# SOC Home Lab Journey
 
-Welcome to my Security Operations Center (SOC) Home Lab project! The goal of this lab is to practice threat hunting, network security, and incident response by simulating real-world attacks and defending against them.
+Welcome! This repository is my personal learning journal as I build a **Security Operations Center (SOC) home lab**. I am documenting the setup, labs, and findings as I work through phishing analysis, network monitoring, endpoint defense, SIEM, threat intelligence, digital forensics, and incident response.
 
-## 🏗️ Lab Architecture & Setup
+The goal is simple: practice like an analyst. Isolated virtual machines, real tools, and write-ups I can look back on.
 
-### 1. Virtual Environment & Networking
-I am using **VMware Workstation** to host my virtual machines.
-*   **VMnet2 (Host-Only):** `192.168.10.0/24` - Used for internal lab traffic between the attacker and victim machines.
-*   **VMnet8 (NAT):** Used to provide internet access to the VMs for downloading tools and updates.
+---
 
-### 2. Virtual Machines
-*   **Windows 10 (Victim/Target):** 
-    *   NAT IP: `192.168.81.133`
-    *   Host-Only IP: `192.168.10.6`
-*   **Kali Linux (Attacker):**
-    *   NAT IP (`ens33`): `192.168.81.138`
-    *   Host-Only IP (`ens37`): `192.168.10.5`
+## Lab topology
 
- ![Network Setup](https://github.com/anoynmousb2k/SOC-Home-Lab-Journey/blob/bca3097943b6e781a7739d631ab41ffdee2c8bf2/images/vmware-network.png.png)
+I am using **VMware Workstation** with two adapters per VM so the lab can talk internally and still reach the internet for tools and updates.
 
-### 3. Security Preparations
-Windows Defender was disabled *only on this isolated lab VM* to allow safe malware analysis practice. Never do this on a personal or production machine.
-*   `Set-MpPreference -DisableRealtimeMonitoring $true`
-*   `Set-MpPreference -DisableScanningNetworkFiles $true`
-*   `Set-MpPreference -DisableBlockAtFirstSeen $true`
+| Role | VM | NAT IP (VMnet8) | Host-Only IP (VMnet2) |
+| --- | --- | --- | --- |
+| Victim / analyst workstation | Windows 10 | `192.168.81.133` | `192.168.10.6` |
+| Attacker / analysis host | Kali Linux | `192.168.81.138` | `192.168.10.5` |
 
- ![Disable Defender](https://github.com/anoynmousb2k/SOC-Home-Lab-Journey/blob/ff896433d70e314dc5f9b96922ca84b41bb6e3a2/images/disable-defender.png.png)
+| Network | Adapter | Subnet | Purpose |
+| --- | --- | --- | --- |
+| Host-Only | VMnet2 | `192.168.10.0/24` | Isolated traffic between lab VMs |
+| NAT | VMnet8 | `192.168.81.0/24` | Internet access for downloads and updates |
 
-## 📂 Lab Modules
-I will be working through the following modules and documenting my findings:
-1.  Phishing Analysis
-2.  Network Security
-3.  Endpoint Security
-4.  SIEM (Security Information and Event Management)
-5.  Threat Intelligence
-6.  Digital Forensics
-7.  Incident Response
+![VMware network adapters](images/vmware-network.png.png)
 
-![Lab Modules](https://github.com/anoynmousb2k/SOC-Home-Lab-Journey/blob/c60d9f25e8050de99f2f2902afcb49f6e47d96fd/images/lab-modules.png.png)
+Setup notes live in [`labs/00_Lab_Setup/`](labs/00_Lab_Setup/README.md).
 
+---
+
+## Progress tracker
+
+| Module | Folder | Status |
+| --- | --- | --- |
+| 00 Lab Setup | [`labs/00_Lab_Setup/`](labs/00_Lab_Setup/README.md) | Done |
+| 01 Phishing Analysis | [`labs/01_Phishing_Analysis/`](labs/01_Phishing_Analysis/README.md) | In Progress |
+| 02 Network Security | — | Upcoming |
+| 03 Endpoint Security | — | Upcoming |
+| 04 SIEM | — | Upcoming |
+| 05 Threat Intelligence | — | Upcoming |
+| 06 Digital Forensics | — | Upcoming |
+| 07 Incident Response | — | Upcoming |
+
+![Lab modules](images/lab-modules.png.png)
+
+---
+
+## Disclaimer
+
+This is an **isolated home lab** on virtual machines. Nothing here is meant for production systems, other people's mailboxes, or live networks I do not own.
+
+Windows Defender was **disabled only on the lab Windows 10 VM** so I could practice analysis safely. I would never do this on a personal or work machine.
+
+![Disable Defender in the lab VM](images/disable-defender.png.png)
+
+---
+
+## Resources
+
+- [TCM Security — Security Operations (SOC) 101 on YouTube](https://www.youtube.com/watch?v=56NDgBOSpUg)
+- [Official free course GitHub repo (`MalwareCube/SOC101_Free`)](https://github.com/MalwareCube/SOC101_Free)
+- [TCM Security Academy — SOC 101](https://tcm-sec.com/academy/security-operations-soc-101/)
+
+---
+
+Thanks for reading along. I am learning in public, one lab at a time.
